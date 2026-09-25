@@ -1,0 +1,17 @@
+/* Product Testing Platform — Case Study · Dhruvi Shah */
+html{overflow-y:scroll;}
+    html,body{margin:0;padding:0;background:#ffffff;}
+    a{color:rgb(54,160,232);}
+    a:hover{color:rgb(28,37,65);}
+    *{box-sizing:border-box;}
+    @keyframes flowDash{to{stroke-dashoffset:-17;}}
+    @keyframes logoMarquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+/* hover states */
+.hv8:hover{color:rgb(54,160,232) !important}
+.hv9:hover{color:rgb(54,160,232) !important}
+.hv10:hover{color:rgb(54,160,232) !important}
+.hv11:hover{color:rgb(54,160,232) !important}
+.hv12:hover{color:rgb(54,160,232) !important}
+.hv13:hover{animation-play-state:paused !important}
+.hv14:hover{background:rgb(54,160,232) !important;transform:translateY(-4px) !important;color:#ffffff !important}
+.hv15:hover{color:rgb(54,160,232) !important;border-color:rgb(54,160,232) !important;transform:translateY(-4px) !important}

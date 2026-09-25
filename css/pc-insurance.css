@@ -1,0 +1,28 @@
+/* P&C Insurance Policyholder Experience — Case Study · Dhruvi Shah */
+html{overflow-y:scroll;}
+    html,body{margin:0;padding:0;background:#ffffff;}
+    a{color:rgb(54,160,232);}
+    a:hover{color:rgb(28,37,65);}
+    *{box-sizing:border-box;}
+    @keyframes screenMarquee{from{transform:translate3d(0,0,0);}to{transform:translate3d(-50%,0,0);}}
+/* hover states */
+.hv16:hover{color:rgb(54,160,232) !important}
+.hv17:hover{color:rgb(54,160,232) !important}
+.hv18:hover{color:rgb(54,160,232) !important}
+.hv19:hover{color:rgb(54,160,232) !important}
+.hv20:hover{color:rgb(54,160,232) !important}
+.hv21:hover{transform:translateY(-8px) !important;box-shadow:0 20px 40px rgba(28,37,65,0.2) !important}
+.hv22:hover{transform:translateY(-8px) !important;box-shadow:0 20px 40px rgba(28,37,65,0.2) !important}
+.hv23:hover{transform:translateY(-8px) !important;box-shadow:0 20px 40px rgba(28,37,65,0.2) !important}
+.hv24:hover{transform:translateY(-8px) !important;box-shadow:0 20px 40px rgba(28,37,65,0.2) !important}
+.hv25:hover{animation-play-state:paused !important}
+.hv26:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv27:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv28:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv29:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv30:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv31:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv32:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv33:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv34:hover{background:rgb(54,160,232) !important;transform:translateY(-4px) !important;color:#ffffff !important}
+.hv35:hover{color:rgb(54,160,232) !important;border-color:rgb(54,160,232) !important;transform:translateY(-4px) !important}

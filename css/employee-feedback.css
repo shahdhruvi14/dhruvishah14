@@ -1,0 +1,37 @@
+/* Employee Feedback Analytics — Case Study · Dhruvi Shah */
+html{overflow-y:scroll;}
+    html,body{margin:0;padding:0;background:#ffffff;}
+    a{color:rgb(54,160,232);}
+    a:hover{color:rgb(28,37,65);}
+    *{box-sizing:border-box;}
+    @keyframes flowDash{to{stroke-dashoffset:-17;}}
+    @keyframes nodePulse{0%{r:6;opacity:0.7;}100%{r:18;opacity:0;}}
+    @keyframes illFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+    @keyframes screenMarquee{from{transform:translate3d(0,0,0);}to{transform:translate3d(-50%,0,0);}}
+/* hover states */
+.hv36:hover{color:rgb(54,160,232) !important}
+.hv37:hover{color:rgb(54,160,232) !important}
+.hv38:hover{color:rgb(54,160,232) !important}
+.hv39:hover{color:rgb(54,160,232) !important}
+.hv40:hover{color:rgb(54,160,232) !important}
+.hv41:hover{transform:translateY(-8px) !important;box-shadow:0 20px 40px rgba(28,37,65,0.2) !important}
+.hv42:hover{transform:translateY(-8px) !important;box-shadow:0 20px 40px rgba(28,37,65,0.2) !important}
+.hv43:hover{transform:translateY(-8px) !important;box-shadow:0 20px 40px rgba(28,37,65,0.2) !important}
+.hv44:hover{transform:translateY(-8px) !important;box-shadow:0 20px 40px rgba(28,37,65,0.2) !important}
+.hv45:hover{animation-play-state:paused !important}
+.hv46:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv47:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv48:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv49:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv50:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv51:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv52:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv53:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv54:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv55:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv56:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv57:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv58:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv59:hover{transform:scale(1.07) !important;box-shadow:0 28px 60px rgba(28,37,65,0.22) !important;z-index:2 !important}
+.hv60:hover{background:rgb(54,160,232) !important;transform:translateY(-4px) !important;color:#ffffff !important}
+.hv61:hover{color:rgb(54,160,232) !important;border-color:rgb(54,160,232) !important;transform:translateY(-4px) !important}

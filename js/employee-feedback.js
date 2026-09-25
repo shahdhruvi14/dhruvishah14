@@ -1,0 +1,162 @@
+/* Employee Feedback Analytics — Case Study · Dhruvi Shah — page logic (vanilla JS) */
+class EmployeeFeedbackPage extends Page {
+  constructor(props){
+    super(props);
+    this.outerRef = createRef();
+    this.canvasRef = createRef();
+    this.headerRef = createRef();
+    this.colRef = createRef();
+    this.decisionVideo = createRef();
+    this.decisionVideo2 = createRef();
+    this.decisionVideo3 = createRef();
+    this.decisionVideoM = createRef();
+    this.decisionVideo2M = createRef();
+    this.decisionVideo3M = createRef();
+    this._scale = 1;
+    this._lastScrollY = 0;
+    this.state = { headerVisible: true, vw: (typeof window !== 'undefined' ? window.innerWidth : 1440) };
+    this._fit = this._fit.bind(this);
+    this._scroll = this._scroll.bind(this);
+    this._vw = () => {
+      const w = window.innerWidth;
+      if(Math.abs(w - this.state.vw) > 2) this.setState({ vw: w });
+    };
+  }
+  _initVideo(ref){
+    const v = ref.current;
+    if(v){
+      v.muted = true; v.defaultMuted = true; v.controls = false;
+      const p = v.play(); if(p && p.catch) p.catch(()=>{});
+    }
+  }
+  _toggleVideo(ref){
+    const v = ref.current;
+    if(!v) return;
+    if(v.paused){ v.muted = true; const p = v.play(); if(p && p.catch) p.catch(()=>{}); }
+    else { v.pause(); }
+  }
+  componentDidMount(){
+    this._fit();
+    window.addEventListener('resize', this._fit);
+    window.addEventListener('resize', this._vw);
+    window.addEventListener('scroll', this._scroll, {passive: true});
+    if(document.fonts && document.fonts.ready){ document.fonts.ready.then(this._fit); }
+    this._fitTo = setTimeout(this._fit, 600);
+    this._fitTo2 = setTimeout(this._fit, 2200);
+    window.addEventListener('load', this._fit);
+    [this.decisionVideo, this.decisionVideo2, this.decisionVideo3, this.decisionVideoM, this.decisionVideo2M, this.decisionVideo3M].forEach(r => this._initVideo(r));
+    this._vTick = setInterval(() => {
+      [this.decisionVideo, this.decisionVideo2, this.decisionVideo3, this.decisionVideoM, this.decisionVideo2M, this.decisionVideo3M].forEach(r => this._initVideo(r));
+    }, 1000);
+  }
+  componentWillUnmount(){
+    window.removeEventListener('resize', this._fit);
+    window.removeEventListener('resize', this._vw);
+    window.removeEventListener('load', this._fit);
+    window.removeEventListener('scroll', this._scroll);
+    clearTimeout(this._fitTo);
+    clearTimeout(this._fitRetry);
+    clearTimeout(this._roTo);
+    clearTimeout(this._fitTo2);
+    if(this._ro) this._ro.disconnect();
+    clearTimeout(this._scrollStopTo);
+    clearInterval(this._vTick);
+  }
+  _fmt(t){
+    if(!isFinite(t)) t = 0;
+    const m = Math.floor(t / 60), s = Math.floor(t % 60);
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+  _fit(){
+    if(this.state.vw < 1200){ clearTimeout(this._fitRetry); return; }
+    const outer = this.outerRef.current;
+    const canvas = this.canvasRef.current;
+    const header = this.headerRef.current;
+    const col = this.colRef.current;
+    clearTimeout(this._fitRetry);
+    if(!outer || !canvas){ this._fitRetry = setTimeout(this._fit, 30); return; }
+    if(!this._roAttached && typeof ResizeObserver !== 'undefined'){
+      this._roAttached = true;
+      this._ro = new ResizeObserver(() => {
+        const w = outer.clientWidth;
+        const ch = col ? col.offsetHeight : 0;
+        if(w === this._lastVw && ch === this._lastColH) return;
+        clearTimeout(this._roTo);
+        this._roTo = setTimeout(this._fit, 60);
+      });
+      this._ro.observe(outer);
+      if(col) this._ro.observe(col);
+    }
+    if(!this._mediaHooked && canvas){
+      this._mediaHooked = true;
+      canvas.querySelectorAll('img, video').forEach(m => {
+        m.addEventListener('load', this._fit);
+        m.addEventListener('loadedmetadata', this._fit);
+      });
+    }
+    const vwRaw = outer.clientWidth;
+    if(!vwRaw){ this._fitRetry = setTimeout(this._fit, 30); return; }
+    const vw = (this._lastVw && Math.abs(vwRaw - this._lastVw) <= 20) ? this._lastVw : vwRaw;
+    this._scale = Math.min(1, vw / 1920);
+    const h = col ? col.offsetTop + Math.max(col.offsetHeight, col.scrollHeight) + 40 : 7300;
+    this._lastColH = col ? col.offsetHeight : 0;
+    if(vw === this._lastVw && h === this._lastH) return;
+    this._lastVw = vw; this._lastH = h;
+    canvas.style.height = h + 'px';
+    canvas.style.transform = 'translateX(-50%) scale(' + this._scale + ')';
+    outer.style.height = (h * this._scale) + 'px';
+    if(header){
+      const canvasLeft = (vw - 1920 * this._scale) / 2;
+      header.style.left = (canvasLeft + 245 * this._scale) + 'px';
+      header.style.width = (1430 * this._scale) + 'px';
+    }
+  }
+  _scroll(){
+    if(this.state.vw < 1200) return;
+    if(!(this.props.headerAutoHide ?? true)) return;
+    const y = window.scrollY;
+    const last = this._lastScrollY;
+    if(y > last && y > 80){
+      if(this.state.headerVisible) this.setState({ headerVisible: false });
+    } else if(y < last){
+      if(!this.state.headerVisible) this.setState({ headerVisible: true });
+    }
+    this._lastScrollY = y;
+    clearTimeout(this._scrollStopTo);
+    this._scrollStopTo = setTimeout(() => {
+      if(!this.state.headerVisible) this.setState({ headerVisible: true });
+    }, 2000);
+  }
+  renderVals(){
+    const isMobile = this.state.vw < 1200;
+    return {
+      isMobile: isMobile,
+      isDesktop: !isMobile,
+      decisionVideo: this.decisionVideo,
+      decisionTime: this._fmt(0) + ' / ' + this._fmt(0),
+      decisionVideo2: this.decisionVideo2,
+      decisionVideo3: this.decisionVideo3,
+      decisionTime3: this._fmt(0) + ' / ' + this._fmt(0),
+      decisionTime2: this._fmt(0) + ' / ' + this._fmt(0),
+      toggleDecisionVideo: () => this._toggleVideo(this.decisionVideo),
+      toggleDecisionVideo2: () => this._toggleVideo(this.decisionVideo2),
+      toggleDecisionVideo3: () => this._toggleVideo(this.decisionVideo3),
+      decisionVideoM: this.decisionVideoM,
+      decisionVideo2M: this.decisionVideo2M,
+      decisionVideo3M: this.decisionVideo3M,
+      toggleDecisionVideoM: () => this._toggleVideo(this.decisionVideoM),
+      toggleDecisionVideo2M: () => this._toggleVideo(this.decisionVideo2M),
+      toggleDecisionVideo3M: () => this._toggleVideo(this.decisionVideo3M),
+      outerRef: this.outerRef,
+      canvasRef: this.canvasRef,
+      headerRef: this.headerRef,
+      colRef: this.colRef,
+      headerTransform: this.state.headerVisible ? 'translateY(0)' : 'translateY(-120px)',
+      headerOpacity: this.state.headerVisible ? 1 : 0,
+      headerPointerEvents: this.state.headerVisible ? 'auto' : 'none',
+      flowAnim: (this.props.animateFlow ?? true) ? 'flowDash 1.4s linear infinite' : 'none',
+    };
+  }
+}
+
+mount(EmployeeFeedbackPage);

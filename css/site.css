@@ -1,0 +1,11 @@
+/* Shared site styles */
+html, body { margin: 0; padding: 0; background: #ffffff; }
+*, *::before, *::after { box-sizing: border-box; }
+a { color: rgb(54,160,232); }
+a:hover { color: rgb(28,37,65); }
+img, video { max-width: none; }
+
+/* Layout switch: desktop layout at 1200px and up, single-column layout below */
+.v-desk, .v-mob { display: contents; }
+@media (max-width: 1199.98px) { .v-desk { display: none !important; } }
+@media (min-width: 1200px) { .v-mob { display: none !important; } }
