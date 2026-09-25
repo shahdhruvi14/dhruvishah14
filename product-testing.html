@@ -3,110 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Product Testing Tool — Case Study</title>
+<title>Product Testing Platform — Case Study · Dhruvi Shah</title>
+<meta name="description" content="Portfolio of Dhruvi Shah, UX/UI Product Designer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=Lato:ital,wght@0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/product-testing.css">
 </head>
-<body data-canvas-mode="responsive">
+<body>
+<div id="app">
 
-<helmet>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=Lato:ital,wght@0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">
-  <style>
-    html{overflow-y:scroll;}
-    html,body{margin:0;padding:0;background:#ffffff;}
-    a{color:rgb(54,160,232);}
-    a:hover{color:rgb(28,37,65);}
-    *{box-sizing:border-box;}
-    body{-webkit-tap-highlight-color:transparent;}
-    @keyframes flowDash{to{stroke-dashoffset:-17;}}
-    @keyframes logoMarquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-    @media (max-width:1099px){
-      div[style*="width: 1920px"]{width:100% !important;}
-      div[style*="left: 1080px"],div[style*="left: -120px"]{display:none !important;}
-      div[style*="grid-template-columns"]{grid-template-columns:1fr !important;gap:24px !important;}
-      div[style*="align-items: stretch"]{flex-direction:column !important;}
-      div[style*="width: 120px"][style*="flex-shrink: 0"]{width:100% !important;height:64px !important;}
-      span[style*="font-size: 80px"]{font-size:clamp(28px,8vw,52px) !important;line-height:114% !important;}
-      span[style*="font-size: 40px"]{font-size:clamp(21px,5.6vw,34px) !important;white-space:normal !important;text-align:center;}
-      span[style*="font-size: 38px"]{font-size:clamp(21px,5.6vw,32px) !important;text-align:center;}
-      span[style*="font-size: 34px"]{font-size:clamp(19px,5vw,28px) !important;}
-      span[style*="font-size: 32px"]{font-size:clamp(15px,4.2vw,20px) !important;}
-      span[style*="font-size: 30px"],span[style*="font-size: 26px"]{font-size:clamp(16px,4.4vw,22px) !important;}
-      span[style*="font-size: 24px"]{font-size:clamp(15px,4vw,18px) !important;}
-      span[style*="font-size: 23px"],span[style*="font-size: 22px"]{font-size:clamp(14px,3.9vw,17px) !important;}
-      span[style*="font-size: 20px"]{font-size:clamp(13px,3.6vw,16px) !important;}
-      div[style*="height: 640px"]{height:clamp(200px,58vw,420px) !important;touch-action:pan-y !important;}
-      div[style*="padding: 48px"]{padding:24px 20px !important;}
-      div[style*="padding: 56px 60px 44px"]{padding:24px 16px 20px !important;}
-      div[style*="padding: 26px 64px"]{padding:16px 22px !important;}
-      div[style*="padding: 36px 34px"]{padding:22px 18px !important;}
-      div[style*="gap: 130px"],div[style*="gap: 88px"],div[style*="gap: 76px"]{gap:32px !important;flex-wrap:wrap;}
-      div[style*="margin-top: 96px"],div[style*="margin-top: 104px"],div[style*="margin-top: 110px"],div[style*="margin-top: 130px"],div[style*="margin-top: 150px"],div[style*="margin-top: 170px"],div[style*="margin-top: 180px"]{margin-top:clamp(48px,12vw,92px) !important;}
-      div[style*="margin-top: 80px"],div[style*="margin-top: 64px"]{margin-top:clamp(30px,8vw,60px) !important;}
-      div[style*="height: 440px"]{height:clamp(220px,52vw,380px) !important;}
-      div[style*="width: 620px"]{width:min(80vw,620px) !important;}
-      a[style*="padding: 26px 54px"]{padding:16px 28px !important;font-size:16px !important;}
-      img{max-width:100%;}
-    }
-  </style>
-</helmet>
-
-<div class="only-wide">
+<div class="v-desk">
 <!-- FLOATING HEADER -->
-<div id="site-header" style="position:fixed;top:16px;z-index:9999;border-radius:50px;height:60px;background:rgba(255,255,255,0.6) padding-box, linear-gradient(135deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%) border-box;border:1.5px solid transparent;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:0 4px 32px rgba(28,37,65,0.10),inset -5px -5px 250px 0px rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:space-between;padding:0 40px;transform:translateY(0);opacity:1;pointer-events:auto;transition:transform 0.35s cubic-bezier(0.22,1,0.36,1),opacity 0.35s ease;">
-  <a href="index.html" style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:24px;line-height:100%;letter-spacing:-1px;color:rgb(28,37,65);white-space:nowrap;text-decoration:none;" data-hv="h8">Dhruvi Shah</a>
+<div data-ref="headerRef" style="position:fixed;top:16px;z-index:9999;border-radius:50px;height:60px;background:rgba(255,255,255,0.6) padding-box, linear-gradient(135deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%) border-box;border:1.5px solid transparent;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:0 4px 32px rgba(28,37,65,0.10),inset -5px -5px 250px 0px rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:space-between;padding:0 40px;transition:transform 0.35s cubic-bezier(0.22,1,0.36,1),opacity 0.35s ease" data-bs="[[&quot;transform&quot;,&quot;{{ headerTransform }}&quot;],[&quot;opacity&quot;,&quot;{{ headerOpacity }}&quot;],[&quot;pointer-events&quot;,&quot;{{ headerPointerEvents }}&quot;]]">
+  <a href="index.html" style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:24px;line-height:100%;letter-spacing:-1px;color:rgb(28,37,65);white-space:nowrap;text-decoration:none;" class="hv8">Dhruvi Shah</a>
   <div style="display:flex;flex-direction:row;gap:40px;align-items:center;">
-    <a href="index.html#work" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" data-hv="h9">Work</a>
-    <a href="index.html#enjoy" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" data-hv="h10">About</a>
-    <a href="index.html#resume" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" data-hv="h11">Resume</a>
-    <a href="index.html#contact" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" data-hv="h12">Contact</a>
+    <a href="index.html#work" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" class="hv9">Work</a>
+    <a href="index.html#enjoy" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" class="hv10">About</a>
+    <a href="index.html#resume" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" class="hv11">Resume</a>
+    <a href="index.html#contact" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" class="hv12">Contact</a>
   </div>
 </div>
 
-</div>
-
-<div class="only-compact">
-  <div id="site-topbar" style="position:fixed;top:0;left:0;right:0;z-index:9000;padding-top:env(safe-area-inset-top);background:rgba(255,255,255,0.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(28,37,65,0.07);transform:translateY(0);transition:transform 0.32s cubic-bezier(0.22,1,0.36,1);">
-    <div style="height:56px;display:flex;align-items:center;gap:6px;padding:0 8px 0 4px;">
-      <a href="index.html#work" aria-label="Back to work" style="width:46px;height:46px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:50%;text-decoration:none;">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgb(28,37,65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
-      </a>
-      <span style="flex:1 1 auto;font-family:'Lato',sans-serif;font-weight:700;font-size:16px;color:rgb(28,37,65);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Product Testing Tool</span>
-      <div id="menu-toggle" role="button" aria-label="Menu" style="width:46px;height:46px;flex-shrink:0;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer;">
-        <span id="burger-1" style="width:22px;height:2px;border-radius:2px;background:rgb(28,37,65);transform:translateY(0) rotate(0);transition:transform 0.3s cubic-bezier(0.22,1,0.36,1);"></span>
-        <span id="burger-2" style="width:22px;height:2px;border-radius:2px;background:rgb(28,37,65);opacity:1;transition:opacity 0.2s ease;"></span>
-        <span id="burger-3" style="width:22px;height:2px;border-radius:2px;background:rgb(28,37,65);transform:translateY(0) rotate(0);transition:transform 0.3s cubic-bezier(0.22,1,0.36,1);"></span>
-      </div>
-    </div>
-  </div>
-  <div id="menu-scrim" style="position:fixed;inset:0;z-index:9400;background:rgba(14,19,34,0.44);opacity:0;pointer-events:none;transition:opacity 0.3s ease;"></div>
-  <div id="menu-sheet" style="position:fixed;left:0;right:0;bottom:0;z-index:9500;border-radius:24px 24px 0 0;background:rgba(255,255,255,0.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:0 -18px 54px rgba(28,37,65,0.24);padding:8px 16px calc(20px + env(safe-area-inset-bottom));transform:translateY(110%);transition:transform 0.42s cubic-bezier(0.22,1,0.36,1);touch-action:none;">
-    <div id="sheet-handle" style="padding:10px 0 14px;cursor:grab;">
-      <div style="width:44px;height:4px;border-radius:3px;background:rgba(28,37,65,0.2);margin:0 auto;"></div>
-    </div>
-    <a href="index.html" style="display:flex;align-items:center;justify-content:space-between;min-height:58px;padding:0 8px;text-decoration:none;border-bottom:1px solid rgba(28,37,65,0.07);">
-      <span style="font-family:'Black Han Sans',sans-serif;font-size:19px;letter-spacing:-0.5px;color:rgb(28,37,65);">Dhruvi Shah</span>
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(28,37,65,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
-    </a>
-    <a href="index.html#work" style="display:flex;align-items:center;justify-content:space-between;min-height:58px;padding:0 8px;text-decoration:none;border-bottom:1px solid rgba(28,37,65,0.07);"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;color:rgb(28,37,65);">Work</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(28,37,65,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></a>
-    <a href="index.html#enjoy" style="display:flex;align-items:center;justify-content:space-between;min-height:58px;padding:0 8px;text-decoration:none;border-bottom:1px solid rgba(28,37,65,0.07);"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;color:rgb(28,37,65);">About</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(28,37,65,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></a>
-    <a href="index.html#resume" style="display:flex;align-items:center;justify-content:space-between;min-height:58px;padding:0 8px;text-decoration:none;border-bottom:1px solid rgba(28,37,65,0.07);"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;color:rgb(28,37,65);">Resume</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(28,37,65,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></a>
-    <a href="index.html#contact" style="display:flex;align-items:center;justify-content:space-between;min-height:58px;padding:0 8px;text-decoration:none;"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;color:rgb(28,37,65);">Contact</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(28,37,65,0.35)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg></a>
-  </div>
-</div>
-
-<div id="site-outer" style="position:relative;width:100%;overflow-x:hidden;background:#ffffff;">
-<div id="site-canvas" style="position:absolute;left:50%;top:0;transform-origin:top center;width:1920px;height:8600px;overflow:hidden;background:#ffffff;will-change:transform;">
+<div style="position:relative;width:100%;overflow-x:hidden;background:#ffffff;" data-ref="outerRef">
+<div style="position:absolute;left:50%;top:0;transform-origin:top center;width:1920px;height:8600px;overflow:hidden;background:#ffffff;will-change:transform;" data-ref="canvasRef">
 
   <div style="position:absolute;left:0;top:0;width:1920px;height:1250px;background:linear-gradient(180deg, rgba(255,224,120,0.20) 0%, rgba(255,176,128,0.16) 26%, rgba(150,200,255,0.15) 62%, rgba(255,255,255,0) 100%);"></div>
   <div style="position:absolute;left:1080px;top:-160px;width:920px;height:720px;border-radius:50%;background:radial-gradient(closest-side, rgba(255,150,210,0.16) 0%, rgba(255,150,210,0) 100%);filter:blur(30px);"></div>
   <div style="position:absolute;left:-120px;top:80px;width:840px;height:720px;border-radius:50%;background:radial-gradient(closest-side, rgba(150,200,255,0.18) 0%, rgba(150,200,255,0) 100%);filter:blur(30px);"></div>
 
-  <div id="site-col" style="position:absolute;left:245px;top:140px;width:1430px;display:flex;flex-direction:column;">
+  <div style="position:absolute;left:245px;top:140px;width:1430px;display:flex;flex-direction:column;" data-ref="colRef">
 
     <!-- HERO -->
     <div data-screen-label="Case Study Hero" style="margin-top:96px;display:flex;flex-direction:column;gap:24px;align-items:center;">
@@ -115,9 +42,9 @@
     </div>
 
     <div style="margin-top:80px;display:flex;flex-direction:column;gap:18px;">
-      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:24px;line-height:170%;color:rgba(28,37,65,0.85);text-wrap:pretty;">This is a U.S.-based web application focused on testing and collecting feedback on hardware products across various categories, including apparel, footwear, and home goods. The platform connects real testers with brands to evaluate products in real-world conditions, providing actionable insights that can guide product improvements and innovation.</span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:24px;line-height:170%;color:rgba(28,37,65,0.85);text-wrap:pretty;">This platform focused on testing and collecting feedback on hardware products across various categories, including apparel, footwear, and home goods. The platform connects real testers with brands to evaluate products in real-world conditions, providing actionable insights that can guide product improvements and innovation.</span>
       <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:24px;line-height:170%;color:rgb(28,37,65);text-wrap:pretty;">Validate Product with Valuable Customer Feedback On A Single-Platform Product Testing Solution.</span>
-      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:24px;line-height:170%;color:rgba(28,37,65,0.85);">Hence, the platform's motto is: <span style="font-weight:700;color:rgb(28,37,65);">Real People. Real Testing. Real Feedback.</span></span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:24px;line-height:170%;color:rgba(28,37,65,0.85);">Hence, the core mission is: <span style="font-weight:700;color:rgb(28,37,65);">Real People. Real Testing. Real Feedback.</span></span>
     </div>
 
     <!-- PROBLEM → GOAL -->
@@ -139,9 +66,9 @@
 
     <!-- BRAND LOGO STRIPE -->
     <div style="margin-top:170px;display:flex;flex-direction:column;gap:34px;align-items:center;">
-      <span style="font-family: 'Lato',sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 6px; line-height: 100%; color: rgba(28,37,65,0.45); text-transform: uppercase">BRANDS TESTING ON THE PLATFORM</span>
+      <span style="font-family: 'Lato',sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 6px; line-height: 100%; color: rgba(28,37,65,0.45); text-transform: uppercase">BRANDS &amp; PARTNERS</span>
       <div style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg, transparent 0%, #000 9%, #000 91%, transparent 100%);mask-image:linear-gradient(90deg, transparent 0%, #000 9%, #000 91%, transparent 100%);">
-        <div style="display:flex;width:max-content;animation:logoMarquee 64s linear infinite;" data-hv="h13">
+        <div style="display:flex;width:max-content;animation:logoMarquee 64s linear infinite;" class="hv13">
         <div style="flex-shrink:0;display:flex;align-items:center;gap:88px;padding-right:88px;">
           <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:700;font-size:34px;line-height:100%;letter-spacing:0.5px;color:rgb(28,37,65);white-space:nowrap;">Nike</span>
           <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:700;font-size:34px;line-height:100%;letter-spacing:0.5px;color:rgb(28,37,65);white-space:nowrap;">lululemon</span>
@@ -210,19 +137,19 @@
     </div>
     <div style="margin-top:64px;border-radius:24px;background:linear-gradient(180deg, rgba(54,160,232,0.16) 0%, rgba(150,200,255,0.22) 100%);padding:56px 60px 44px;display:flex;flex-direction:column;gap:28px;align-items:center;">
       <div style="width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:-6px;">
-        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">BEFORE</span>
         </div>
-        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">AFTER</span>
         </div>
       </div>
-      <div id="cmp-1" style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;">
+      <div style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;" data-ref="cmpRef1" data-on-pointerdown="onDown1">
         <img src="assets/pt-1-after.png" alt="Redesigned question list without preview panel" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;">
-        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;clip-path:inset(0 50% 0 0);pointer-events:none;" id="cmp-1-clip">
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;pointer-events:none" data-bs="[[&quot;clip-path&quot;,&quot;{{ clip1 }}&quot;]]">
           <img src="assets/pt-1-before.png" alt="Legacy question builder with side-by-side preview" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;">
         </div>
-        <div style="position:absolute;top:0;bottom:0;left:50%;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none;" id="cmp-1-handle">
+        <div style="position:absolute;top:0;bottom:0;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none" data-bs="[[&quot;left&quot;,&quot;{{ pos1 }}&quot;]]">
           <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:#ffffff;border:3px solid rgb(54,160,232);box-shadow:0 8px 22px rgba(28,37,65,0.22);display:flex;align-items:center;justify-content:center;gap:4px;">
             <svg width="26" height="20" viewBox="0 0 26 20" fill="none" stroke="rgb(54,160,232)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 4 10l5 6"></path><path d="m17 4 5 6-5 6"></path></svg>
           </div>
@@ -254,19 +181,19 @@
     </div>
     <div style="margin-top:64px;border-radius:24px;background:linear-gradient(180deg, rgba(54,160,232,0.16) 0%, rgba(150,200,255,0.22) 100%);padding:56px 60px 44px;display:flex;flex-direction:column;gap:28px;align-items:center;">
       <div style="width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:-6px;">
-        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">BEFORE</span>
         </div>
-        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">AFTER</span>
         </div>
       </div>
-      <div id="cmp-2" style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;">
+      <div style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;" data-ref="cmpRef2" data-on-pointerdown="onDown2">
         <img src="assets/pt-2-after.png" alt="Drag-and-drop nested conditional question hierarchy" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;">
-        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;clip-path:inset(0 50% 0 0);pointer-events:none;" id="cmp-2-clip">
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;pointer-events:none" data-bs="[[&quot;clip-path&quot;,&quot;{{ clip2 }}&quot;]]">
           <img src="assets/pt-2-before.png" alt="Legacy modal for ordering active questions" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;">
         </div>
-        <div style="position:absolute;top:0;bottom:0;left:50%;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none;" id="cmp-2-handle">
+        <div style="position:absolute;top:0;bottom:0;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none" data-bs="[[&quot;left&quot;,&quot;{{ pos2 }}&quot;]]">
           <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:#ffffff;border:3px solid rgb(54,160,232);box-shadow:0 8px 22px rgba(28,37,65,0.22);display:flex;align-items:center;justify-content:center;gap:4px;">
             <svg width="26" height="20" viewBox="0 0 26 20" fill="none" stroke="rgb(54,160,232)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 4 10l5 6"></path><path d="m17 4 5 6-5 6"></path></svg>
           </div>
@@ -298,19 +225,19 @@
     </div>
     <div style="margin-top:64px;border-radius:24px;background:linear-gradient(180deg, rgba(54,160,232,0.16) 0%, rgba(150,200,255,0.22) 100%);padding:56px 60px 44px;display:flex;flex-direction:column;gap:28px;align-items:center;">
       <div style="width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:-6px;">
-        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">BEFORE</span>
         </div>
-        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">AFTER</span>
         </div>
       </div>
-      <div id="cmp-3" style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;">
+      <div style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;" data-ref="cmpRef3" data-on-pointerdown="onDown3">
         <img src="assets/pt-3-after.png" alt="Single expanded rating question with sub-question sliders" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;">
-        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;clip-path:inset(0 50% 0 0);pointer-events:none;" id="cmp-3-clip">
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;pointer-events:none" data-bs="[[&quot;clip-path&quot;,&quot;{{ clip3 }}&quot;]]">
           <img src="assets/pt-3-before.png" alt="Legacy form with every question expanded" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;">
         </div>
-        <div style="position:absolute;top:0;bottom:0;left:50%;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none;" id="cmp-3-handle">
+        <div style="position:absolute;top:0;bottom:0;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none" data-bs="[[&quot;left&quot;,&quot;{{ pos3 }}&quot;]]">
           <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:#ffffff;border:3px solid rgb(54,160,232);box-shadow:0 8px 22px rgba(28,37,65,0.22);display:flex;align-items:center;justify-content:center;gap:4px;">
             <svg width="26" height="20" viewBox="0 0 26 20" fill="none" stroke="rgb(54,160,232)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 4 10l5 6"></path><path d="m17 4 5 6-5 6"></path></svg>
           </div>
@@ -335,19 +262,19 @@
 
     <div data-screen-label="Feature 4" style="margin-top:64px;border-radius:24px;background:linear-gradient(180deg, rgba(54,160,232,0.16) 0%, rgba(150,200,255,0.22) 100%);padding:56px 60px 44px;display:flex;flex-direction:column;gap:28px;align-items:center;">
       <div style="width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:-6px;">
-        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">BEFORE</span>
         </div>
-        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">AFTER</span>
         </div>
       </div>
-      <div id="cmp-4" style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;">
+      <div style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;" data-ref="cmpRef4" data-on-pointerdown="onDown4">
         <img src="assets/pt-4-after.png" alt="Redesigned tester community with collapsible filter pane" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;">
-        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;clip-path:inset(0 50% 0 0);pointer-events:none;" id="cmp-4-clip">
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;pointer-events:none" data-bs="[[&quot;clip-path&quot;,&quot;{{ clip4 }}&quot;]]">
           <img src="assets/pt-4-before.png" alt="Legacy tester community filtering experience" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;">
         </div>
-        <div style="position:absolute;top:0;bottom:0;left:50%;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none;" id="cmp-4-handle">
+        <div style="position:absolute;top:0;bottom:0;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none" data-bs="[[&quot;left&quot;,&quot;{{ pos4 }}&quot;]]">
           <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:#ffffff;border:3px solid rgb(54,160,232);box-shadow:0 8px 22px rgba(28,37,65,0.22);display:flex;align-items:center;justify-content:center;gap:4px;">
             <svg width="26" height="20" viewBox="0 0 26 20" fill="none" stroke="rgb(54,160,232)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 4 10l5 6"></path><path d="m17 4 5 6-5 6"></path></svg>
           </div>
@@ -372,19 +299,19 @@
 
     <div data-screen-label="Feature 5" style="margin-top:64px;border-radius:24px;background:linear-gradient(180deg, rgba(54,160,232,0.16) 0%, rgba(150,200,255,0.22) 100%);padding:56px 60px 44px;display:flex;flex-direction:column;gap:28px;align-items:center;">
       <div style="width:100%;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-top:-6px;">
-        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgba(28,37,65,0.85);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">BEFORE</span>
         </div>
-        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);display:flex;align-items:center;">
+        <div style="border-radius:50px;padding:10px 26px;background:rgb(54,160,232);align-items:center" data-bs="[[&quot;display&quot;,&quot;{{ labelDisplay }}&quot;]]">
           <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:20px;letter-spacing:1px;color:#ffffff;">AFTER</span>
         </div>
       </div>
-      <div id="cmp-5" style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;">
+      <div style="position:relative;width:100%;height:640px;border-radius:14px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);cursor:ew-resize;touch-action:none;user-select:none;-webkit-user-select:none;" data-ref="cmpRef5" data-on-pointerdown="onDown5">
         <img src="assets/pt-5-after.png" alt="Redesigned product tests table with contextual actions" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;pointer-events:none;">
-        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;clip-path:inset(0 50% 0 0);pointer-events:none;" id="cmp-5-clip">
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:#ffffff;pointer-events:none" data-bs="[[&quot;clip-path&quot;,&quot;{{ clip5 }}&quot;]]">
           <img src="assets/pt-5-before.png" alt="Legacy current tests list view" draggable="false" style="position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:center;">
         </div>
-        <div style="position:absolute;top:0;bottom:0;left:50%;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none;" id="cmp-5-handle">
+        <div style="position:absolute;top:0;bottom:0;width:3px;background:rgb(54,160,232);box-shadow:0 0 18px rgba(54,160,232,0.5);pointer-events:none" data-bs="[[&quot;left&quot;,&quot;{{ pos5 }}&quot;]]">
           <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:#ffffff;border:3px solid rgb(54,160,232);box-shadow:0 8px 22px rgba(28,37,65,0.22);display:flex;align-items:center;justify-content:center;gap:4px;">
             <svg width="26" height="20" viewBox="0 0 26 20" fill="none" stroke="rgb(54,160,232)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 4 10l5 6"></path><path d="m17 4 5 6-5 6"></path></svg>
           </div>
@@ -399,15 +326,317 @@
       <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:32px;text-align:center;line-height:100%;color:rgb(28,37,65);">Where to next?</span>
       <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:80px;text-align:center;line-height:100%;color:rgb(28,37,65);">Keep Exploring</span>
       <div style="margin-top:48px;display:flex;gap:32px;align-items:center;">
-        <a href="index.html#work" style="display:inline-flex;align-items:center;gap:14px;border-radius:50px;padding:26px 54px;background:rgb(28,37,65);color:#ffffff;font-family:'Lato',sans-serif;font-weight:700;font-size:24px;text-decoration:none;white-space:nowrap;flex-shrink:0;box-shadow:0 16px 36px rgba(28,37,65,0.22);transition:background 0.25s ease, transform 0.25s ease;" data-hv="h14">View More Case Studies<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
-        <a href="index.html#contact" style="display:inline-flex;align-items:center;gap:14px;border-radius:50px;padding:26px 54px;background:rgba(255,255,255,0.5);border:1.5px solid rgba(28,37,65,0.5);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:rgb(28,37,65);font-family:'Lato',sans-serif;font-weight:700;font-size:24px;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;" data-hv="h15">Contact Me</a>
+        <a href="index.html#work" style="display:inline-flex;align-items:center;gap:14px;border-radius:50px;padding:26px 54px;background:rgb(28,37,65);color:#ffffff;font-family:'Lato',sans-serif;font-weight:700;font-size:24px;text-decoration:none;white-space:nowrap;flex-shrink:0;box-shadow:0 16px 36px rgba(28,37,65,0.22);transition:background 0.25s ease, transform 0.25s ease;" class="hv14">View More Case Studies<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+        <a href="index.html#contact" style="display:inline-flex;align-items:center;gap:14px;border-radius:50px;padding:26px 54px;background:rgba(255,255,255,0.5);border:1.5px solid rgba(28,37,65,0.5);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:rgb(28,37,65);font-family:'Lato',sans-serif;font-weight:700;font-size:24px;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;" class="hv15">Contact Me</a>
       </div>
     </div>
 
   </div>
 </div>
 </div>
+</div>
 
-<script src="script.js"></script>
+<div class="v-mob">
+<div style="position:sticky;top:0;z-index:9000;height:56px;display:flex;align-items:center;gap:10px;padding:0 12px;background:rgba(255,255,255,0.88);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(28,37,65,0.10);">
+  <a href="index.html#work" style="display:flex;align-items:center;gap:6px;min-height:44px;padding:0 6px;text-decoration:none;color:rgb(28,37,65);font-family:'Lato',sans-serif;font-weight:700;font-size:15px;flex-shrink:0;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m11 18-6-6 6-6"></path></svg>
+    Work
+  </a>
+  <span style="flex:1 1 auto;min-width:0;font-family:'Lato',sans-serif;font-weight:700;font-size:15px;color:rgba(28,37,65,0.55);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:right;">Product Testing Tool</span>
+</div>
+
+<div style="position:relative;width:100%;overflow-x:hidden;background:linear-gradient(180deg, rgba(255,224,120,0.18) 0%, rgba(255,176,128,0.14) 14%, rgba(150,200,255,0.13) 34%, rgba(255,255,255,0) 62%);display:flex;flex-direction:column;align-items:center;padding:0 16px calc(84px + env(safe-area-inset-bottom));">
+<div style="width:100%;max-width:720px;display:flex;flex-direction:column;gap:clamp(64px,13vw,104px);padding-top:clamp(32px,8vw,48px);">
+
+  <!-- MOBILE HERO -->
+  <div data-screen-label="Hero (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:rgba(28,37,65,0.5);">What did I build</span>
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(38px,10vw,58px);line-height:106%;letter-spacing:-0.5px;color:rgb(28,37,65);">Product Testing Tool</span>
+    <div style="margin-top:10px;border-radius:18px;overflow:hidden;border:1px solid rgba(28,37,65,0.12);box-shadow:0 14px 34px rgba(28,37,65,0.14);background:#ffffff;">
+      <img src="assets/pt-1-after.png" alt="Redesigned question builder" style="display:block;width:100%;height:auto;">
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <div style="display:flex;flex-direction:column;gap:16px;">
+    <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:17px;line-height:172%;color:rgba(28,37,65,0.88);text-wrap:pretty;">This platform focused on testing and collecting feedback on hardware products across various categories, including apparel, footwear, and home goods. The platform connects real testers with brands to evaluate products in real-world conditions, providing actionable insights that can guide product improvements and innovation.</span>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;line-height:160%;color:rgb(28,37,65);text-wrap:pretty;">Validate Product with Valuable Customer Feedback On A Single-Platform Product Testing Solution.</span>
+    <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:17px;line-height:172%;color:rgba(28,37,65,0.88);">Hence, the core mission is: <span style="font-weight:700;color:rgb(28,37,65);">Real People. Real Testing. Real Feedback.</span></span>
+  </div>
+
+  <!-- PROBLEM / GOAL -->
+  <div data-screen-label="Problem to Goal (mobile)" style="display:flex;flex-direction:column;gap:0;">
+    <div style="padding:24px;border-radius:20px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.3);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);display:flex;flex-direction:column;gap:14px;">
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:26px;line-height:100%;color:rgb(28,37,65);">Problem</span>
+      <div>
+        <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">The existing platform made it difficult for brands to efficiently manage product tests and make sense of the large volume of tester feedback. Key testing activities and insights were spread across different areas, creating a fragmented experience for users. Testers also needed a simpler and more intuitive way to provide feedback throughout the testing process.</span>
+        </div>
+          </div>
+    <div style="width:100%;display:flex;align-items:center;justify-content:center;padding:14px 0;">
+      <div style="width:52px;height:52px;border-radius:50%;background:radial-gradient(141% 107% at 0% 0%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.12) 100%);border:1px solid rgba(28,37,65,0.35);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 10px 24px rgba(28,37,65,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;transform:rotate(90deg);">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgb(54,160,232)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+      </div>
+    </div>
+    <div style="padding:24px;border-radius:20px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.3);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);display:flex;flex-direction:column;gap:14px;">
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:26px;line-height:100%;color:rgb(28,37,65);">Goal</span>
+      <div>
+        <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">The goal was to create a more streamlined and intuitive testing experience for both brands and testers. The redesign focused on simplifying test management, improving feedback collection, and making insights easier to understand and act upon. The experience was designed to help brands make faster, more informed product decisions based on real-world feedback.</span>
+        </div>
+          </div>
+  </div>
+
+  <!-- BRANDS -->
+  <div style="display:flex;flex-direction:column;gap:20px;align-items:center;">
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:4px;line-height:100%;color:rgba(28,37,65,0.45);text-transform:uppercase;text-align:center;">Brands &amp; Partners</span>
+    <div style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);mask-image:linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%);">
+      <div style="display:flex;width:max-content;animation:logoMarquee 48s linear infinite;">
+        <div style="flex-shrink:0;display:flex;align-items:center;gap:44px;padding-right:44px;">
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:700;font-size:22px;color:rgb(28,37,65);white-space:nowrap;">Nike</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:700;font-size:22px;color:rgb(28,37,65);white-space:nowrap;">lululemon</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">L.L.Bean</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">ATHLETA</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">THE NORTH FACE</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">ASICS</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">TARGET</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">HOKA</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">RALPH LAUREN</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">CARHARTT</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">WALMART</span>
+        </div>
+        <div style="flex-shrink:0;display:flex;align-items:center;gap:44px;padding-right:44px;">
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:700;font-size:22px;color:rgb(28,37,65);white-space:nowrap;">Nike</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:700;font-size:22px;color:rgb(28,37,65);white-space:nowrap;">lululemon</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">L.L.Bean</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">ATHLETA</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">THE NORTH FACE</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">ASICS</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">TARGET</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">HOKA</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">RALPH LAUREN</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">CARHARTT</span>
+          <span style="flex-shrink:0;font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:1.5px;color:rgba(28,37,65,0.55);white-space:nowrap;">WALMART</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION: DESIGNING THE SOLUTION -->
+  <div style="display:flex;flex-direction:column;gap:14px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(26px,7vw,36px);line-height:110%;color:rgb(28,37,65);">Designing the Solution</span>
+    <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:18px;line-height:150%;color:rgb(54,160,232);text-wrap:pretty;">From Question Builder to Survey Experience</span>
+  </div>
+
+  <!-- FEATURE 1 -->
+  <div data-screen-label="Feature 1 (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:20px;line-height:100%;color:rgb(54,160,232);">01</span>
+      <div style="flex:1 1 auto;height:1px;background:rgba(28,37,65,0.16);"></div>
+    </div>
+    <div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(28,37,65,0.45);">Challenge</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">The legacy experience used a persistent side-by-side preview that consumed significant screen space, even though analysts were primarily focused on building and managing questions.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgb(54,160,232);">Approach</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Apply the <span style="font-weight:700;color:rgb(28,37,65);">WYSIWYG</span> principle directly to the question-building experience, eliminating the need for a separate preview panel.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(28,37,65,0.45);">Solution &amp; UX Impact</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Removing the redundant preview created more working space for question management while keeping the creation experience representative of the final tester experience. This allowed important actions and survey structure to remain visible without overwhelming the workspace.</span>
+        </div>
+      </div>
+    </div>
+        <div style="border-radius:20px;background:linear-gradient(180deg, rgba(54,160,232,0.14) 0%, rgba(150,200,255,0.20) 100%);padding:18px;display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <div style="border-radius:50px;padding:7px 16px" data-bs="[[&quot;background&quot;,&quot;{{ f1Chip }}&quot;]]"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#ffffff;"><span data-t="f1Which"></span></span></div>
+        <a href="#" style="min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border-radius:50px;background:#ffffff;border:1px solid rgba(28,37,65,0.2);font-family:'Lato',sans-serif;font-weight:700;font-size:14px;color:rgb(28,37,65);text-decoration:none;" data-on-click="f1Flip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 6h18"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 18H3"></path></svg>
+          <span data-t="f1FlipLabel"></span>
+        </a>
+      </div>
+      <a href="#" style="display:block;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 10px 26px rgba(28,37,65,0.14);text-decoration:none;" data-on-click="f1Zoom">
+        <img src="assets/pt-1-before.png" alt="Question builder, before and after — before" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f1BeforeShow }}&quot;]]">
+        <img src="assets/pt-1-after.png" alt="Question builder, before and after — after" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f1AfterShow }}&quot;]]">
+      </a>
+      <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:13px;color:rgba(28,37,65,0.6);">Tap the image to view it full screen</span>
+    </div>
+  </div>
+
+  <!-- FEATURE 2 -->
+  <div data-screen-label="Feature 2 (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:20px;line-height:100%;color:rgb(54,160,232);">02</span>
+      <div style="flex:1 1 auto;height:1px;background:rgba(28,37,65,0.16);"></div>
+    </div>
+    <div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(28,37,65,0.45);">Challenge</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Creating and managing parent-child questions required additional effort and made conditional survey structures harder to understand.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgb(54,160,232);">Approach</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Use direct manipulation through drag-and-drop to make hierarchy creation part of the natural question-ordering interaction.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(28,37,65,0.45);">Solution &amp; UX Impact</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Analysts can quickly reorder questions or nest them under a parent question, making complex conditional flows easier to build, understand, and maintain.</span>
+        </div>
+      </div>
+    </div>
+        <div style="border-radius:20px;background:linear-gradient(180deg, rgba(54,160,232,0.14) 0%, rgba(150,200,255,0.20) 100%);padding:18px;display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <div style="border-radius:50px;padding:7px 16px" data-bs="[[&quot;background&quot;,&quot;{{ f2Chip }}&quot;]]"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#ffffff;"><span data-t="f2Which"></span></span></div>
+        <a href="#" style="min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border-radius:50px;background:#ffffff;border:1px solid rgba(28,37,65,0.2);font-family:'Lato',sans-serif;font-weight:700;font-size:14px;color:rgb(28,37,65);text-decoration:none;" data-on-click="f2Flip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 6h18"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 18H3"></path></svg>
+          <span data-t="f2FlipLabel"></span>
+        </a>
+      </div>
+      <a href="#" style="display:block;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 10px 26px rgba(28,37,65,0.14);text-decoration:none;" data-on-click="f2Zoom">
+        <img src="assets/pt-2-before.png" alt="Question hierarchy, before and after — before" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f2BeforeShow }}&quot;]]">
+        <img src="assets/pt-2-after.png" alt="Question hierarchy, before and after — after" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f2AfterShow }}&quot;]]">
+      </a>
+      <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:13px;color:rgba(28,37,65,0.6);">Tap the image to view it full screen</span>
+    </div>
+  </div>
+
+  <!-- FEATURE 3 -->
+  <div data-screen-label="Feature 3 (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:20px;line-height:100%;color:rgb(54,160,232);">03</span>
+      <div style="flex:1 1 auto;height:1px;background:rgba(28,37,65,0.16);"></div>
+    </div>
+    <div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(28,37,65,0.45);">Challenge</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Showing multiple expanded questions created unnecessary visual density and required analysts to scroll through long forms to focus on a specific question.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgb(54,160,232);">Approach</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Use progressive disclosure — keep only the active question expanded while collapsing completed or inactive questions.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(28,37,65,0.45);">Solution &amp; UX Impact</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">The interface keeps the analyst focused on one question at a time, reducing cognitive load and creating a more structured, task-oriented workflow.</span>
+        </div>
+      </div>
+    </div>
+        <div style="border-radius:20px;background:linear-gradient(180deg, rgba(54,160,232,0.14) 0%, rgba(150,200,255,0.20) 100%);padding:18px;display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <div style="border-radius:50px;padding:7px 16px" data-bs="[[&quot;background&quot;,&quot;{{ f3Chip }}&quot;]]"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#ffffff;"><span data-t="f3Which"></span></span></div>
+        <a href="#" style="min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border-radius:50px;background:#ffffff;border:1px solid rgba(28,37,65,0.2);font-family:'Lato',sans-serif;font-weight:700;font-size:14px;color:rgb(28,37,65);text-decoration:none;" data-on-click="f3Flip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 6h18"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 18H3"></path></svg>
+          <span data-t="f3FlipLabel"></span>
+        </a>
+      </div>
+      <a href="#" style="display:block;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 10px 26px rgba(28,37,65,0.14);text-decoration:none;" data-on-click="f3Zoom">
+        <img src="assets/pt-3-before.png" alt="Rating question, before and after — before" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f3BeforeShow }}&quot;]]">
+        <img src="assets/pt-3-after.png" alt="Rating question, before and after — after" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f3AfterShow }}&quot;]]">
+      </a>
+      <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:13px;color:rgba(28,37,65,0.6);">Tap the image to view it full screen</span>
+    </div>
+  </div>
+
+  <!-- SECTION: COMMUNITY -->
+  <div data-screen-label="Community (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(26px,7vw,36px);line-height:110%;color:rgb(28,37,65);">Community - Finding the Right Testers</span>
+    <div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">With a community of 95,000+ testers, analysts need to quickly identify the right participants for each product test. The redesigned experience makes complex filtering intuitive and easy to navigate, allowing analysts to narrow the tester pool based on product-specific criteria.</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Once the right audience is identified, analysts can collapse the filter pane to create more space for reviewing and selecting testers, keeping the focus on the final selection.</span>
+      </div>
+    </div>
+        <div style="border-radius:20px;background:linear-gradient(180deg, rgba(54,160,232,0.14) 0%, rgba(150,200,255,0.20) 100%);padding:18px;display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <div style="border-radius:50px;padding:7px 16px" data-bs="[[&quot;background&quot;,&quot;{{ f4Chip }}&quot;]]"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#ffffff;"><span data-t="f4Which"></span></span></div>
+        <a href="#" style="min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border-radius:50px;background:#ffffff;border:1px solid rgba(28,37,65,0.2);font-family:'Lato',sans-serif;font-weight:700;font-size:14px;color:rgb(28,37,65);text-decoration:none;" data-on-click="f4Flip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 6h18"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 18H3"></path></svg>
+          <span data-t="f4FlipLabel"></span>
+        </a>
+      </div>
+      <a href="#" style="display:block;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 10px 26px rgba(28,37,65,0.14);text-decoration:none;" data-on-click="f4Zoom">
+        <img src="assets/pt-4-before.png" alt="Tester community filtering, before and after — before" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f4BeforeShow }}&quot;]]">
+        <img src="assets/pt-4-after.png" alt="Tester community filtering, before and after — after" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f4AfterShow }}&quot;]]">
+      </a>
+      <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:13px;color:rgba(28,37,65,0.6);">Tap the image to view it full screen</span>
+    </div>
+  </div>
+
+  <!-- SECTION: PRODUCT TESTS -->
+  <div data-screen-label="Product Tests (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(26px,7vw,36px);line-height:110%;color:rgb(28,37,65);">Product Tests - Managing Tests at a Glance</span>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">As the primary workspace for analysts, the Product Tests screen brings all active and completed tests into one place. With key details such as test name, category, dates, status, owners, creators, and ratings presented together, analysts can quickly scan test progress and identify what needs attention.</span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Contextual actions are kept easily accessible for each test, allowing analysts to manage their tests efficiently without unnecessary navigation.</span>
+    </div>
+    <div style="border-radius:20px;background:linear-gradient(180deg, rgba(54,160,232,0.14) 0%, rgba(150,200,255,0.20) 100%);padding:18px;display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+        <div style="border-radius:50px;padding:7px 16px" data-bs="[[&quot;background&quot;,&quot;{{ f5Chip }}&quot;]]"><span style="font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:1px;color:#ffffff;"><span data-t="f5Which"></span></span></div>
+        <a href="#" style="min-height:44px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border-radius:50px;background:#ffffff;border:1px solid rgba(28,37,65,0.2);font-family:'Lato',sans-serif;font-weight:700;font-size:14px;color:rgb(28,37,65);text-decoration:none;" data-on-click="f5Flip">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"></path><path d="M3 6h18"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 18H3"></path></svg>
+          <span data-t="f5FlipLabel"></span>
+        </a>
+      </div>
+      <a href="#" style="display:block;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.12);box-shadow:0 10px 26px rgba(28,37,65,0.14);text-decoration:none;" data-on-click="f5Zoom">
+        <img src="assets/pt-5-before.png" alt="Product tests workspace, before and after — before" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f5BeforeShow }}&quot;]]">
+        <img src="assets/pt-5-after.png" alt="Product tests workspace, before and after — after" style="width:100%;height:auto" data-bs="[[&quot;display&quot;,&quot;{{ f5AfterShow }}&quot;]]">
+      </a>
+      <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:13px;color:rgba(28,37,65,0.6);">Tap the image to view it full screen</span>
+    </div>
+  </div>
+
+  <!-- END OF CASE -->
+  <div data-screen-label="Case End (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(28px,8vw,40px);line-height:106%;color:rgb(28,37,65);">Keep Exploring</span>
+    <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Head back to all work, or get in touch if you would like to talk through the process behind this project.</span>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <a href="index.html#work" style="min-height:52px;display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:50px;padding:0 26px;background:rgb(28,37,65);color:#ffffff;font-family:'Lato',sans-serif;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 12px 28px rgba(28,37,65,0.2);">Back to all work<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+      <a href="index.html#contact" style="min-height:52px;display:inline-flex;align-items:center;justify-content:center;border-radius:50px;padding:0 26px;background:rgba(255,255,255,0.7);border:1.5px solid rgba(28,37,65,0.45);color:rgb(28,37,65);font-family:'Lato',sans-serif;font-weight:700;font-size:17px;text-decoration:none;">Contact me</a>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- BOTTOM TAB BAR -->
+<div style="position:fixed;left:0;right:0;bottom:0;z-index:9500;display:flex;align-items:stretch;justify-content:space-around;padding:6px 8px calc(6px + env(safe-area-inset-bottom));background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid rgba(28,37,65,0.10);">
+  <a href="index.html" style="flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:rgb(82,90,112);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.3px;">Home</span>
+  </a>
+  <a href="index.html#work" style="flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:rgb(54,160,232);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.3px;">Work</span>
+  </a>
+  <a href="index.html#resume" style="flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:rgb(82,90,112);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.3px;">Resume</span>
+  </a>
+  <a href="index.html#contact" style="flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:rgb(82,90,112);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.3px;">Contact</span>
+  </a>
+</div>
+
+<div data-if="hasZoom" style="display:none">
+<div style="position:fixed;left:0;top:0;right:0;bottom:0;z-index:10000;background:rgba(12,16,28,0.95);display:flex;flex-direction:column;" data-on-click="closeZoom">
+  <div style="height:56px;flex-shrink:0;display:flex;align-items:center;justify-content:flex-end;padding:0 10px;">
+    <a href="#" style="min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 16px;border-radius:50px;background:rgba(255,255,255,0.12);color:#ffffff;font-family:'Lato',sans-serif;font-weight:700;font-size:15px;text-decoration:none;" data-on-click="closeZoom">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      Close
+    </a>
+  </div>
+  <div style="flex:1 1 auto;min-height:0;display:flex;align-items:center;justify-content:center;padding:0 8px 20px;overflow:auto;">
+    <img alt="Full screen view" style="max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;border-radius:8px;" data-ref="zoomImgRef" data-on-click="stopZoomPropagation">
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script src="js/app.js"></script>
+<script src="js/product-testing.js"></script>
 </body>
 </html>

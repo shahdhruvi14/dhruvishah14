@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Employee Feedback Analytics — Case Study · Dhruvi Shah</title>
+<meta name="description" content="Portfolio of Dhruvi Shah, UX/UI Product Designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&amp;family=Lato:ital,wght@0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/employee-feedback.css">
+</head>
+<body>
+<div id="app">
+
+<div class="v-desk">
+<div data-ref="headerRef" style="position:fixed;top:16px;z-index:9999;border-radius:50px;height:60px;background:rgba(255,255,255,0.6) padding-box, linear-gradient(135deg,rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 100%) border-box;border:1.5px solid transparent;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);box-shadow:0 4px 32px rgba(28,37,65,0.10),inset -5px -5px 250px 0px rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:space-between;padding:0 40px;transition:transform 0.35s cubic-bezier(0.22,1,0.36,1),opacity 0.35s ease" data-bs="[[&quot;transform&quot;,&quot;{{ headerTransform }}&quot;],[&quot;opacity&quot;,&quot;{{ headerOpacity }}&quot;],[&quot;pointer-events&quot;,&quot;{{ headerPointerEvents }}&quot;]]">
+  <a href="index.html" style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:24px;line-height:100%;letter-spacing:-1px;color:rgb(28,37,65);white-space:nowrap;text-decoration:none;" class="hv36">Dhruvi Shah</a>
+  <div style="display:flex;flex-direction:row;gap:40px;align-items:center;">
+    <a href="index.html#work" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" class="hv37">Work</a>
+    <a href="index.html#enjoy" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" class="hv38">About</a>
+    <a href="index.html#resume" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" class="hv39">Resume</a>
+    <a href="index.html#contact" style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;color:rgb(28,37,65);text-decoration:none;white-space:nowrap;" class="hv40">Contact</a>
+  </div>
+</div>
+
+<div style="position:relative;width:100%;overflow-x:hidden;background:#ffffff;" data-ref="outerRef">
+<div style="position:absolute;left:50%;top:0;transform-origin:top center;width:1920px;height:7300px;overflow:hidden;background:#ffffff;" data-ref="canvasRef">
+
+  <div style="position:absolute;left:0;top:0;width:1920px;height:1250px;background:linear-gradient(180deg, rgba(255,224,120,0.20) 0%, rgba(255,176,128,0.16) 26%, rgba(150,200,255,0.15) 62%, rgba(255,255,255,0) 100%);"></div>
+  <div style="position:absolute;left:1080px;top:-160px;width:920px;height:720px;border-radius:50%;background:radial-gradient(closest-side, rgba(255,150,210,0.16) 0%, rgba(255,150,210,0) 100%);filter:blur(30px);"></div>
+  <div style="position:absolute;left:-120px;top:80px;width:840px;height:720px;border-radius:50%;background:radial-gradient(closest-side, rgba(150,200,255,0.18) 0%, rgba(150,200,255,0) 100%);filter:blur(30px);"></div>
+
+  <div style="position:absolute;left:245px;top:140px;width:1430px;display:flex;flex-direction:column;" data-ref="colRef">
+
+    <div data-screen-label="Case Study Hero" style="margin-top:96px;display:flex;flex-direction:column;gap:24px;align-items:center;">
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:32px;text-align:center;line-height:100%;color:rgb(28,37,65);">What did I build?</span>
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:80px;text-align:center;line-height:110%;color:rgb(28,37,65);">Employee Feedback Analytics</span>
+      <span style="max-width:1180px;margin-top:16px;font-family:'Lato',sans-serif;font-weight:400;font-size:24px;line-height:170%;text-align:center;color:rgba(28,37,65,0.85);text-wrap:pretty;">Built as an internal decision-support tool for an organization, the application processes annual employee engagement survey data across thousands of respondents spanning multiple divisions, legal entities, and business units. It bridges the gap between raw employee feedback and leadership action — giving HR analysts, division heads, and executives a shared, real-time view of what their people are saying, without waiting for manual reports or external consultants to interpret the data.</span>
+    </div>
+
+    <div data-screen-label="Problem to Goal" style="margin-top:150px;display:flex;align-items:stretch;gap:0;">
+      <div style="flex:1 1 0;padding:48px;border-radius:24px;background:radial-gradient(141% 107% at 0% 0%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);border:1px solid rgba(28,37,65,0.5);backdrop-filter:blur(42px);-webkit-backdrop-filter:blur(42px);box-shadow:inset -5px -5px 250px 0px rgba(255,255,255,0.02);display:flex;flex-direction:column;gap:28px;">
+        <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:40px;line-height:100%;color:rgb(28,37,65);">Problem</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:22px;line-height:165%;color:rgba(28,37,65,0.9);text-wrap:pretty;">Previously, the organization’s teams were managing and reviewing thousands of employee survey responses manually — typically in Excel — with no structured way to classify themes, track sentiment, or compare results across divisions, demographics, or tenure groups. This made it difficult to surface actionable insight at scale.</span>
+      </div>
+      <div style="width:120px;flex-shrink:0;display:flex;align-items:center;justify-content:center;">
+        <div style="width:72px;height:72px;border-radius:50%;background:radial-gradient(141% 107% at 0% 0%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.12) 100%);border:1px solid rgba(28,37,65,0.35);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 10px 24px rgba(28,37,65,0.12);display:flex;align-items:center;justify-content:center;">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="rgb(54,160,232)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+        </div>
+      </div>
+      <div style="flex:1 1 0;padding:48px;border-radius:24px;background:radial-gradient(141% 107% at 0% 0%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);border:1px solid rgba(28,37,65,0.5);backdrop-filter:blur(42px);-webkit-backdrop-filter:blur(42px);box-shadow:inset -5px -5px 250px 0px rgba(255,255,255,0.02);display:flex;flex-direction:column;gap:28px;">
+        <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:40px;line-height:100%;color:rgb(28,37,65);">Goal</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:22px;line-height:165%;color:rgba(28,37,65,0.9);text-wrap:pretty;">To replace manual Excel-based survey analysis with an AI-powered platform that automatically classifies employee responses into themes and sentiment — enabling HR teams and leadership to explore verbatims, compare engagement across segments via a heatmap, and query the data through a built-in AI assistant, no technical knowledge required.</span>
+      </div>
+    </div>
+
+    <div data-screen-label="Tools Used" style="margin-top:170px;display:flex;flex-direction:column;gap:24px;align-items:center;">
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:32px;text-align:center;line-height:100%;color:rgb(28,37,65);">What powered the process?</span>
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:80px;text-align:center;line-height:100%;color:rgb(28,37,65);">Tools Used</span>
+    </div>
+    <div style="margin-top:80px;display:flex;justify-content:center;gap:130px;">
+      <div style="display:flex;flex-direction:column;gap:22px;align-items:center;">
+        <div style="width:150px;height:150px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 12px 28px rgba(28,37,65,0.16);display:flex;align-items:center;justify-content:center;transition:transform 0.25s ease, box-shadow 0.25s ease;" class="hv41"><img src="assets/logo-claude.svg" alt="Claude" style="width:70px;height:70px;"></div>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:26px;color:rgb(28,37,65);">Claude</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:22px;align-items:center;">
+        <div style="width:150px;height:150px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 12px 28px rgba(28,37,65,0.16);display:flex;align-items:center;justify-content:center;transition:transform 0.25s ease, box-shadow 0.25s ease;" class="hv42"><img src="assets/logo-chatgpt.svg" alt="ChatGPT" style="width:66px;height:66px;"></div>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:26px;color:rgb(28,37,65);">ChatGPT</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:22px;align-items:center;">
+        <div style="width:150px;height:150px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 12px 28px rgba(28,37,65,0.16);display:flex;align-items:center;justify-content:center;transition:transform 0.25s ease, box-shadow 0.25s ease;" class="hv43"><img src="assets/logo-perplexity.svg" alt="Perplexity" style="width:64px;height:64px;"></div>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:26px;color:rgb(28,37,65);">Perplexity</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:22px;align-items:center;">
+        <div style="width:150px;height:150px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 12px 28px rgba(28,37,65,0.16);display:flex;align-items:center;justify-content:center;transition:transform 0.25s ease, box-shadow 0.25s ease;" class="hv44"><img src="assets/logo-figma.svg" alt="Figma" style="width:46px;height:66px;"></div>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:26px;color:rgb(28,37,65);">Figma</span>
+      </div>
+    </div>
+
+    <div data-screen-label="Process" style="margin-top:180px;display:flex;flex-direction:column;gap:24px;align-items:center;">
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:32px;text-align:center;line-height:100%;color:rgb(28,37,65);">How did I get there?</span>
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:80px;text-align:center;line-height:100%;color:rgb(28,37,65);">Process to Achieve the Goal</span>
+    </div>
+    <div style="margin-top:64px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;">
+      <div style="display:flex;flex-direction:column;gap:18px;padding:36px 34px;border-radius:20px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.18);">
+        <div style="display:flex;align-items:center;gap:18px;">
+          <div style="width:72px;height:72px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 12px 28px rgba(28,37,65,0.16);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="assets/icon-analysis.svg" alt="analysis" style="width:38px;height:38px;"></div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(28,37,65,0.5);">Step 01</span>
+            <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:26px;line-height:130%;color:rgb(28,37,65);">Requirements Gathering &amp; Analysis</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Pulled core requirements from the client brief</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">AI classification, dashboard, verbatim explorer, AI assistant</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Quick secondary research to validate users and needs</span></div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:18px;padding:36px 34px;border-radius:20px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.18);">
+        <div style="display:flex;align-items:center;gap:18px;">
+          <div style="width:72px;height:72px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 12px 28px rgba(28,37,65,0.16);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="assets/icon-strategy.svg" alt="strategy" style="width:38px;height:38px;"></div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(28,37,65,0.5);">Step 02</span>
+            <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:26px;line-height:130%;color:rgb(28,37,65);">Project Setup</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Loaded response data and the full brief as inputs</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Set enterprise SaaS rules and the design system</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Defined Figma-ready output specs</span></div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:18px;padding:36px 34px;border-radius:20px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.18);">
+        <div style="display:flex;align-items:center;gap:18px;">
+          <div style="width:72px;height:72px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 12px 28px rgba(28,37,65,0.16);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="assets/icon-ai.svg" alt="ai" style="width:38px;height:38px;"></div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(28,37,65,0.5);">Step 03</span>
+            <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:26px;line-height:130%;color:rgb(28,37,65);">Visualize – Prompt – Prototype</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Mapped IA and sketched screen-wise wireframes</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Prompted an AI design tool with wireframe references</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Refined in Figma, then re-aligned the AI output</span></div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:18px;padding:36px 34px;border-radius:20px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.18);">
+        <div style="display:flex;align-items:center;gap:18px;">
+          <div style="width:72px;height:72px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 12px 28px rgba(28,37,65,0.16);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="assets/icon-handshake.svg" alt="handshake" style="width:38px;height:38px;"></div>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(28,37,65,0.5);">Step 04</span>
+            <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:26px;line-height:130%;color:rgb(28,37,65);">Usability Testing – Feedback – Iteration</span>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Shared the prototype with stakeholders for review</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Collected usability feedback from real usage</span></div>
+          <div style="display:flex;gap:12px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:19px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:19px;line-height:150%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Iterated — e.g. question-wise dashboard insights</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div data-screen-label="Key Decisions" style="margin-top:180px;display:flex;flex-direction:column;gap:24px;align-items:center;">
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:32px;text-align:center;line-height:100%;color:rgb(28,37,65);">What made the difference?</span>
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:80px;text-align:center;line-height:100%;color:rgb(28,37,65);">Key Decisions</span>
+    </div>
+
+    <div style="margin-top:110px;display:flex;flex-direction:column;gap:40px;">
+      <div style="display:flex;align-items:center;gap:22px;">
+        <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:26px;line-height:100%;color:rgb(54,160,232);">01</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:34px;line-height:120%;color:rgb(28,37,65);">Moving Beyond a Single-Sentiment and Theme AI Classification</span>
+        <div style="flex:1 1 auto;height:1px;background:rgba(28,37,65,0.16);"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:76px;">
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:2.4px;text-transform:uppercase;color:rgb(54,160,232);">Decision</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:21px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">A single verbatim can contain multiple perspectives, where the <strong>sentiment&nbsp;</strong><strong>and/or</strong><strong>&nbsp;L1-L2 theme&nbsp;</strong>may change within the same statement. Instead of assigning one sentiment or theme to the entire verbatim, the AI analysis identifies these shifts and segments the verbatim accordingly, with each segment receiving its relevant sentiment, L1 theme, and L2 theme.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:2.4px;text-transform:uppercase;color:rgba(28,37,65,0.45);">UX Impact</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:21px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;"><span data-teams="true">This preserves the full context of the employee’s verbatim while making its <b>underlying meaning easier to analyze</b>. Users can first understand the complete verbatim and then expand it to explore the segmented insights without being overwhelmed by details upfront. The approach makes AI analysis more <b>accurate, transparent, and actionable</b> while keeping the experience easy to scan.</span></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:2.4px;text-transform:uppercase;color:rgba(28,37,65,0.45);">Trade-off</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:21px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;"><span data-teams="true">Showing every segmented insight by default could make a verbatim <b>feel fragmented and visually heavy.</b> An <b>expandable/collapsible</b> structure keeps the original Verbatim as the primary view, while detailed AI interpretation remains available when deeper analysis is needed.</span></span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:64px;position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(28,37,65,0.14);background:rgb(244,248,252);box-shadow:0 24px 60px rgba(28,37,65,0.12);cursor:pointer;" data-on-click="toggleDecisionVideo">
+      <div style="position:relative;width:100%;aspect-ratio:1920 / 950;overflow:hidden;background:rgb(244,248,252);">
+        <video src="assets/media/decision-1.1.mp4" style="position:absolute;left:0;top:-6.842%;display:block;width:100%;height:113.684%;object-fit:fill;" data-ref="decisionVideo" data-ba-autoplay="{{ true }}" data-ba-muted="{{ true }}" data-ba-loop="{{ true }}" data-ba-playsinline="{{ true }}"></video>
+        <div style="position:absolute;left:0;top:0;width:11%;height:9%;background:#ffffff;pointer-events:none;"></div>
+      </div>
+      <div style="position:absolute;right:20px;bottom:18px;display:flex;align-items:center;gap:10px;padding:8px 14px;border-radius:50px;background:rgba(28,37,65,0.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);pointer-events:none;">
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:0.04em;color:#ffffff;"><span data-t="decisionTime"></span></span>
+      </div>
+    </div>
+
+    <div style="margin-top:150px;display:flex;flex-direction:column;gap:40px;">
+      <div style="display:flex;align-items:center;gap:22px;">
+        <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:26px;line-height:100%;color:rgb(54,160,232);">02</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:34px;line-height:120%;color:rgb(28,37,65);">Keeping AI Flexible, With Human Control</span>
+        <div style="flex:1 1 auto;height:1px;background:rgba(28,37,65,0.16);"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:76px;">
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:2.4px;text-transform:uppercase;color:rgb(54,160,232);">Decision</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:21px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">AI-generated themes and sentiments may not always align with an analyst's interpretation, so users can <span style="font-weight:700;color:rgb(28,37,65);">manually adjust classifications</span> when needed. To keep these controls from dominating the view, the edit option stays hidden until hover. Changes require an explicit <span style="font-weight:700;color:rgb(28,37,65);">confirmation step</span>, and every update is recorded in History with the user, date, time, and changed value.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:2.4px;text-transform:uppercase;color:rgba(28,37,65,0.45);">UX Impact</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:21px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">The experience establishes a <span style="font-weight:700;color:rgb(28,37,65);">human-in-the-loop model</span> where AI accelerates analysis without taking away control. Contextual editing keeps the interface clean while preserving flexibility, confirmation reduces accidental changes, and a detailed audit trail creates <span style="font-weight:700;color:rgb(28,37,65);">transparency and accountability</span> around AI-assisted decisions — analysts can correct AI output without compromising traceability.</span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:64px;position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(28,37,65,0.14);background:rgb(244,248,252);box-shadow:0 24px 60px rgba(28,37,65,0.12);cursor:pointer;" data-on-click="toggleDecisionVideo2">
+      <video src="assets/media/decision-2.2.mp4" style="display:block;width:100%;height:auto;" data-ref="decisionVideo2" data-ba-autoplay="{{ true }}" data-ba-muted="{{ true }}" data-ba-loop="{{ true }}" data-ba-playsinline="{{ true }}"></video>
+      <div style="position:absolute;left:0;top:0;width:11%;height:9%;background:#ffffff;pointer-events:none;"></div>
+      <div style="position:absolute;right:20px;bottom:18px;display:flex;align-items:center;gap:10px;padding:8px 14px;border-radius:50px;background:rgba(28,37,65,0.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);pointer-events:none;">
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:0.04em;color:#ffffff;"><span data-t="decisionTime2"></span></span>
+      </div>
+    </div>
+
+    <div style="margin-top:150px;display:flex;flex-direction:column;gap:40px;">
+      <div style="display:flex;align-items:center;gap:22px;">
+        <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:26px;line-height:100%;color:rgb(54,160,232);">03</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:34px;line-height:120%;color:rgb(28,37,65);">Making AI Insights Actionable</span>
+        <div style="flex:1 1 auto;height:1px;background:rgba(28,37,65,0.16);"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:76px;">
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:2.4px;text-transform:uppercase;color:rgb(54,160,232);">Decision</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:21px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Turn dashboard insights such as <span style="font-weight:700;color:rgb(28,37,65);">sentiment, top themes, and heatmaps into interactive entry points</span>, rather than static visualisations. Clicking an insight takes users straight to the relevant feedback with the appropriate context and filters already applied.</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:15px;letter-spacing:2.4px;text-transform:uppercase;color:rgba(28,37,65,0.45);">UX Impact</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:21px;line-height:172%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">This creates a <span style="font-weight:700;color:rgb(28,37,65);">direct path from insight to evidence</span>, eliminating unnecessary navigation and repetitive filtering. Users move from <span style="font-weight:700;color:rgb(28,37,65);">“What is happening?” to “Why is it happening?”</span> with minimal effort, making the dashboard more actionable and accelerating deeper analysis.</span>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:64px;position:relative;border-radius:24px;overflow:hidden;border:1px solid rgba(28,37,65,0.14);background:rgb(244,248,252);box-shadow:0 24px 60px rgba(28,37,65,0.12);cursor:pointer;" data-on-click="toggleDecisionVideo3">
+      <video src="assets/media/decision-3.1.mp4" style="display:block;width:100%;height:auto;" data-ref="decisionVideo3" data-ba-autoplay="{{ true }}" data-ba-muted="{{ true }}" data-ba-loop="{{ true }}" data-ba-playsinline="{{ true }}"></video>
+      <div style="position:absolute;left:0;top:0;width:11%;height:9%;background:#ffffff;pointer-events:none;"></div>
+      <div style="position:absolute;right:20px;bottom:18px;display:flex;align-items:center;gap:10px;padding:8px 14px;border-radius:50px;background:rgba(28,37,65,0.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);pointer-events:none;">
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:15px;letter-spacing:0.04em;color:#ffffff;"><span data-t="decisionTime3"></span></span>
+      </div>
+    </div>
+
+    <div data-screen-label="Final Product Solution" style="margin-top:180px;display:flex;flex-direction:column;gap:24px;align-items:center;">
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:32px;text-align:center;line-height:100%;color:rgb(28,37,65);">Where did it land?</span>
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:80px;text-align:center;line-height:100%;color:rgb(28,37,65);">Final Product Solution</span>
+    </div>
+    <div style="margin-top:80px;position:relative;overflow:clip;overflow-clip-margin:0;touch-action:pan-y;overscroll-behavior:auto;">
+      <div style="display:flex;gap:32px;width:max-content;height:440px;padding:26px 0;animation:screenMarquee 52s linear infinite;touch-action:pan-y;" class="hv45">
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv46"><img src="assets/media/5.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv47"><img src="assets/media/1-300afcff.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv48"><img src="assets/media/3.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv49"><img src="assets/media/4-1829e1c7.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv50"><img src="assets/media/2.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv51"><img src="assets/media/7.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv52"><img src="assets/media/6-684a4e2d.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv53"><img src="assets/media/5.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv54"><img src="assets/media/1-300afcff.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv55"><img src="assets/media/3.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv56"><img src="assets/media/4-1829e1c7.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv57"><img src="assets/media/2.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv58"><img src="assets/media/7.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:16px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);box-shadow:0 14px 34px rgba(28,37,65,0.10);transition:transform 380ms cubic-bezier(.22,.7,.3,1),box-shadow 380ms ease;transform-origin:center center;" class="hv59"><img src="assets/media/6-684a4e2d.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+      </div>
+      <div style="position:absolute;left:0;top:0;bottom:0;width:140px;pointer-events:none;background:linear-gradient(90deg,#ffffff 0%,rgba(255,255,255,0) 100%);"></div>
+      <div style="position:absolute;right:0;top:0;bottom:0;width:140px;pointer-events:none;background:linear-gradient(270deg,#ffffff 0%,rgba(255,255,255,0) 100%);"></div>
+    </div>
+    
+
+
+    <div style="margin-top:120px;min-height:82px;border-radius:24px;background:radial-gradient(141% 107% at 0% 0%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);border:1px solid rgba(28,37,65,0.5);backdrop-filter:blur(42px);-webkit-backdrop-filter:blur(42px);box-shadow:inset -5px -5px 250px 0px rgba(255,255,255,0.02);display:flex;align-items:center;padding:16px 40px;gap:24px;">
+      <svg width="50" height="36" viewBox="0 0 49.999 36" style="transform:scaleX(-1);flex-shrink:0;"><path d="M 17.768 0 L 5.357 0 C 2.403 0 0 2.422 0 5.4 L 0 18 C 0 20.978 2.403 23.4 5.357 23.4 L 8.902 23.4 C 7.244 28.241 5.828 30.559 1.116 32.539 C 0.33 32.869 -0.115 33.713 0.052 34.555 C 0.22 35.395 0.952 36 1.803 36 L 1.807 36 C 11.637 35.982 17.283 32.01 21.287 22.3 C 22.565 19.25 23.214 15.986 23.214 12.6 C 23.214 7.393 21.652 4.558 19.27 0.826 C 18.942 0.311 18.375 0 17.768 0 Z" fill="rgb(54,160,232)"></path><path transform="translate(26.785,0)" d="M 17.768 0 L 5.357 0 C 2.403 0 0 2.422 0 5.4 L 0 18 C 0 20.978 2.403 23.4 5.357 23.4 L 8.902 23.4 C 7.244 28.241 5.828 30.559 1.116 32.539 C 0.33 32.869 -0.115 33.713 0.052 34.555 C 0.22 35.395 0.952 36 1.803 36 L 1.807 36 C 11.637 35.982 17.283 32.01 21.287 22.3 C 22.565 19.25 23.214 15.986 23.214 12.6 C 23.214 7.393 21.652 4.558 19.27 0.826 C 18.942 0.311 18.375 0 17.768 0 Z" fill="rgb(54,160,232)"></path></svg>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-style:italic;font-size:20px;line-height:50px;color:rgb(28,28,28);">Thousands of voices, one clear signal — when AI does the heavy lifting, design gets to do the listening.</span>
+    </div>
+
+    <div data-screen-label="Case Study CTA" style="margin-top:180px;margin-bottom:80px;display:flex;flex-direction:column;gap:24px;align-items:center;">
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:32px;text-align:center;line-height:100%;color:rgb(28,37,65);">Where to next?</span>
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:80px;text-align:center;line-height:100%;color:rgb(28,37,65);">Keep Exploring</span>
+      <div style="margin-top:48px;display:flex;gap:32px;align-items:center;">
+        <a href="index.html#work" style="display:inline-flex;align-items:center;gap:14px;border-radius:50px;padding:26px 54px;background:rgb(28,37,65);color:#ffffff;font-family:'Lato',sans-serif;font-weight:700;font-size:24px;text-decoration:none;white-space:nowrap;flex-shrink:0;box-shadow:0 16px 36px rgba(28,37,65,0.22);transition:background 0.25s ease, transform 0.25s ease;" class="hv60">View More Case Studies<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+        <a href="index.html#contact" style="display:inline-flex;align-items:center;gap:14px;border-radius:50px;padding:26px 54px;background:rgba(255,255,255,0.5);border:1.5px solid rgba(28,37,65,0.5);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);color:rgb(28,37,65);font-family:'Lato',sans-serif;font-weight:700;font-size:24px;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;" class="hv61">Contact Me</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+<div class="v-mob">
+<div style="position:sticky;top:0;z-index:9000;height:56px;display:flex;align-items:center;gap:10px;padding:0 12px;background:rgba(255,255,255,0.88);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(28,37,65,0.10);">
+  <a href="index.html#work" style="display:flex;align-items:center;gap:6px;min-height:44px;padding:0 6px;text-decoration:none;color:rgb(28,37,65);font-family:'Lato',sans-serif;font-weight:700;font-size:15px;flex-shrink:0;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m11 18-6-6 6-6"></path></svg>
+    Work
+  </a>
+  <span style="flex:1 1 auto;min-width:0;font-family:'Lato',sans-serif;font-weight:700;font-size:15px;color:rgba(28,37,65,0.55);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:right;">Employee Feedback Analytics</span>
+</div>
+
+<div style="position:relative;width:100%;overflow-x:hidden;background:linear-gradient(180deg, rgba(255,224,120,0.18) 0%, rgba(255,176,128,0.14) 14%, rgba(150,200,255,0.13) 34%, rgba(255,255,255,0) 62%);display:flex;flex-direction:column;align-items:center;padding:0 16px calc(84px + env(safe-area-inset-bottom));">
+<div style="width:100%;max-width:720px;display:flex;flex-direction:column;gap:clamp(64px,13vw,104px);padding-top:clamp(32px,8vw,48px);">
+
+  <div data-screen-label="Hero (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:rgba(28,37,65,0.5);">What did I build</span>
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(34px,9vw,52px);line-height:108%;letter-spacing:-0.5px;color:rgb(28,37,65);">Employee Feedback Analytics</span>
+    <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:17px;line-height:172%;color:rgba(28,37,65,0.88);text-wrap:pretty;">Built as an internal decision-support tool for an organization, the application processes annual employee engagement survey data across thousands of respondents spanning multiple divisions, legal entities, and business units. It bridges the gap between raw employee feedback and leadership action — giving HR analysts, division heads, and executives a shared, real-time view of what their people are saying, without waiting for manual reports or external consultants to interpret the data.</span>
+  </div>
+
+  <div data-screen-label="Problem to Goal (mobile)" style="display:flex;flex-direction:column;gap:0;">
+    <div style="padding:24px;border-radius:20px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.3);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);display:flex;flex-direction:column;gap:14px;">
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:26px;line-height:100%;color:rgb(28,37,65);">Problem</span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">Previously, the organization’s teams were managing and reviewing thousands of employee survey responses manually — typically in Excel — with no structured way to classify themes, track sentiment, or compare results across divisions, demographics, or tenure groups. This made it difficult to surface actionable insight at scale.</span>
+    </div>
+    <div style="width:100%;display:flex;align-items:center;justify-content:center;padding:14px 0;">
+      <div style="width:52px;height:52px;border-radius:50%;background:radial-gradient(141% 107% at 0% 0%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.12) 100%);border:1px solid rgba(28,37,65,0.35);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 10px 24px rgba(28,37,65,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;transform:rotate(90deg);">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgb(54,160,232)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+      </div>
+    </div>
+    <div style="padding:24px;border-radius:20px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.3);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);display:flex;flex-direction:column;gap:14px;">
+      <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:26px;line-height:100%;color:rgb(28,37,65);">Goal</span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;display:block;">To replace manual Excel-based survey analysis with an AI-powered platform that automatically classifies employee responses into themes and sentiment — enabling HR teams and leadership to explore verbatims, compare engagement across segments via a heatmap, and query the data through a built-in AI assistant, no technical knowledge required.</span>
+    </div>
+  </div>
+
+  <div data-screen-label="Tools Used (mobile)" style="display:flex;flex-direction:column;gap:20px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(26px,7vw,36px);line-height:110%;color:rgb(28,37,65);">Tools Used</span>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:20px;">
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:center;">
+        <div style="width:76px;height:76px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 10px 22px rgba(28,37,65,0.14);display:flex;align-items:center;justify-content:center;"><img src="assets/logo-claude.svg" alt="Claude" style="width:38px;height:38px;"></div>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:14px;color:rgb(28,37,65);">Claude</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:center;">
+        <div style="width:76px;height:76px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 10px 22px rgba(28,37,65,0.14);display:flex;align-items:center;justify-content:center;"><img src="assets/logo-chatgpt.svg" alt="ChatGPT" style="width:38px;height:38px;"></div>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:14px;color:rgb(28,37,65);">ChatGPT</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:center;">
+        <div style="width:76px;height:76px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 10px 22px rgba(28,37,65,0.14);display:flex;align-items:center;justify-content:center;"><img src="assets/logo-perplexity.svg" alt="Perplexity" style="width:36px;height:36px;"></div>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:14px;color:rgb(28,37,65);">Perplexity</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;align-items:center;">
+        <div style="width:76px;height:76px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 10px 22px rgba(28,37,65,0.14);display:flex;align-items:center;justify-content:center;"><img src="assets/logo-figma.svg" alt="Figma" style="width:26px;height:36px;"></div>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:14px;color:rgb(28,37,65);">Figma</span>
+      </div>
+    </div>
+  </div>
+
+  <div data-screen-label="Process (mobile)" style="display:flex;flex-direction:column;gap:24px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(26px,7vw,36px);line-height:110%;color:rgb(28,37,65);">Process to Achieve the Goal</span>
+
+    <div style="display:flex;flex-direction:column;gap:14px;padding:22px 20px;border-radius:18px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.18);">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div style="width:52px;height:52px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 8px 18px rgba(28,37,65,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="assets/icon-analysis.svg" alt="analysis" style="width:26px;height:26px;"></div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(28,37,65,0.5);">Step 01</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;line-height:130%;color:rgb(28,37,65);">Requirements Gathering &amp; Analysis</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Pulled core requirements from the client brief</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">AI classification, dashboard, verbatim explorer, AI assistant</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Quick secondary research to validate users and needs</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;padding:22px 20px;border-radius:18px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.18);">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div style="width:52px;height:52px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 8px 18px rgba(28,37,65,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="assets/icon-strategy.svg" alt="strategy" style="width:26px;height:26px;"></div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(28,37,65,0.5);">Step 02</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;line-height:130%;color:rgb(28,37,65);">Project Setup</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Loaded response data and the full brief as inputs</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Set enterprise SaaS rules and the design system</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Defined Figma-ready output specs</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;padding:22px 20px;border-radius:18px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.18);">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div style="width:52px;height:52px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 8px 18px rgba(28,37,65,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="assets/icon-ai.svg" alt="ai" style="width:26px;height:26px;"></div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(28,37,65,0.5);">Step 03</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;line-height:130%;color:rgb(28,37,65);">Visualize – Prompt – Prototype</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Mapped IA and sketched screen-wise wireframes</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Prompted an AI design tool with wireframe references</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Refined in Figma, then re-aligned the AI output</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;padding:22px 20px;border-radius:18px;background:rgba(255,255,255,0.55);border:1px solid rgba(28,37,65,0.18);">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <div style="width:52px;height:52px;border-radius:50%;background:radial-gradient(120% 120% at 32% 28%, rgb(255,255,255) 0%, rgb(255,255,255) 58%, rgb(238,242,248) 100%);border:1px solid rgba(255,255,255,0.95);box-shadow:0 8px 18px rgba(28,37,65,0.14);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><img src="assets/icon-handshake.svg" alt="handshake" style="width:26px;height:26px;"></div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(28,37,65,0.5);">Step 04</span>
+          <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:19px;line-height:130%;color:rgb(28,37,65);">Usability Testing – Feedback – Iteration</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Shared the prototype with stakeholders for review</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Collected usability feedback from real usage</span></div>
+        <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:rgb(54,160,232);font-size:15px;line-height:150%;">•</span><span style="font-family:'Lato',sans-serif;font-weight:400;font-size:15px;line-height:150%;color:rgba(28,37,65,0.85);">Iterated — e.g. question-wise dashboard insights</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-screen-label="Key Decisions (mobile)" style="display:flex;flex-direction:column;gap:34px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(26px,7vw,36px);line-height:110%;color:rgb(28,37,65);">Key Decisions</span>
+
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:20px;line-height:100%;color:rgb(54,160,232);">01</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:18px;line-height:130%;color:rgb(28,37,65);">Moving Beyond a Single-Sentiment and Theme AI Classification</span>
+      </div>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;"><span style="font-weight:700;color:rgba(28,37,65,0.55);">Decision — </span>A single verbatim can contain multiple perspectives, where the sentiment and/or L1-L2 theme may change within the same statement. The AI analysis identifies these shifts and segments the verbatim accordingly.</span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;"><span style="font-weight:700;color:rgba(28,37,65,0.55);">UX Impact — </span>This preserves the full context of the verbatim while making its underlying meaning easier to analyze, without overwhelming users with details upfront.</span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;"><span style="font-weight:700;color:rgba(28,37,65,0.55);">Trade-off — </span>An expandable/collapsible structure keeps the original verbatim as the primary view, while detailed AI interpretation remains available when needed.</span>
+      <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(28,37,65,0.14);background:rgb(244,248,252);cursor:pointer;" data-on-click="toggleDecisionVideoM">
+        <div style="position:relative;width:100%;aspect-ratio:1920 / 950;overflow:hidden;background:rgb(244,248,252);">
+          <video src="assets/media/decision-1.1.mp4" style="position:absolute;left:0;top:-6.842%;display:block;width:100%;height:113.684%;object-fit:fill;" data-ref="decisionVideoM" data-ba-autoplay="{{ true }}" data-ba-muted="{{ true }}" data-ba-loop="{{ true }}" data-ba-playsinline="{{ true }}"></video>
+          <div style="position:absolute;left:0;top:0;width:11%;height:9%;background:#ffffff;pointer-events:none;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:20px;line-height:100%;color:rgb(54,160,232);">02</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:18px;line-height:130%;color:rgb(28,37,65);">Keeping AI Flexible, With Human Control</span>
+      </div>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;"><span style="font-weight:700;color:rgba(28,37,65,0.55);">Decision — </span>Users can manually adjust AI-generated classifications when needed. Edit options stay hidden until hover/tap, changes require confirmation, and every update is recorded in History.</span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;"><span style="font-weight:700;color:rgba(28,37,65,0.55);">UX Impact — </span>A human-in-the-loop model where AI accelerates analysis without taking away control, and a detailed audit trail creates transparency and accountability.</span>
+      <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(28,37,65,0.14);background:rgb(244,248,252);cursor:pointer;" data-on-click="toggleDecisionVideo2M">
+        <video src="assets/media/decision-2.2.mp4" style="display:block;width:100%;height:auto;" data-ref="decisionVideo2M" data-ba-autoplay="{{ true }}" data-ba-muted="{{ true }}" data-ba-loop="{{ true }}" data-ba-playsinline="{{ true }}"></video>
+        <div style="position:absolute;left:0;top:0;width:11%;height:9%;background:#ffffff;pointer-events:none;"></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:20px;line-height:100%;color:rgb(54,160,232);">03</span>
+        <span style="font-family:'Lato',sans-serif;font-weight:600;font-size:18px;line-height:130%;color:rgb(28,37,65);">Making AI Insights Actionable</span>
+      </div>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;"><span style="font-weight:700;color:rgba(28,37,65,0.55);">Decision — </span>Dashboard insights such as sentiment, top themes, and heatmaps become interactive entry points. Tapping an insight jumps straight to the relevant feedback with filters already applied.</span>
+      <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.9);text-wrap:pretty;"><span style="font-weight:700;color:rgba(28,37,65,0.55);">UX Impact — </span>A direct path from insight to evidence, moving users from "What is happening?" to "Why is it happening?" with minimal effort.</span>
+      <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(28,37,65,0.14);background:rgb(244,248,252);cursor:pointer;" data-on-click="toggleDecisionVideo3M">
+        <video src="assets/media/decision-3.1.mp4" style="display:block;width:100%;height:auto;" data-ref="decisionVideo3M" data-ba-autoplay="{{ true }}" data-ba-muted="{{ true }}" data-ba-loop="{{ true }}" data-ba-playsinline="{{ true }}"></video>
+        <div style="position:absolute;left:0;top:0;width:11%;height:9%;background:#ffffff;pointer-events:none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-screen-label="Final Product Solution (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(26px,7vw,36px);line-height:110%;color:rgb(28,37,65);">Final Product Solution</span>
+    <div style="position:relative;overflow:clip;overflow-clip-margin:0;touch-action:pan-y;border-radius:16px;">
+      <div style="display:flex;gap:16px;width:max-content;height:220px;padding:8px 0;animation:screenMarquee 40s linear infinite;touch-action:pan-y;">
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/5.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/1-300afcff.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/3.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/4-1829e1c7.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/2.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/7.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/6-684a4e2d.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/5.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/1-300afcff.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+        <div style="flex:0 0 auto;height:100%;border-radius:12px;overflow:hidden;background:#ffffff;border:1px solid rgba(28,37,65,0.14);"><img src="assets/media/3.png" alt="Product screen" style="display:block;height:100%;width:auto;max-width:none;"></div>
+      </div>
+      <div style="position:absolute;left:0;top:0;bottom:0;width:40px;pointer-events:none;background:linear-gradient(90deg,#ffffff 0%,rgba(255,255,255,0) 100%);"></div>
+      <div style="position:absolute;right:0;top:0;bottom:0;width:40px;pointer-events:none;background:linear-gradient(270deg,#ffffff 0%,rgba(255,255,255,0) 100%);"></div>
+    </div>
+  </div>
+
+  <div style="min-height:70px;border-radius:20px;background:radial-gradient(141% 107% at 0% 0%, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 100%);border:1px solid rgba(28,37,65,0.4);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);display:flex;align-items:center;padding:16px 20px;gap:16px;">
+    <svg width="34" height="24" viewBox="0 0 49.999 36" style="transform:scaleX(-1);flex-shrink:0;"><path d="M 17.768 0 L 5.357 0 C 2.403 0 0 2.422 0 5.4 L 0 18 C 0 20.978 2.403 23.4 5.357 23.4 L 8.902 23.4 C 7.244 28.241 5.828 30.559 1.116 32.539 C 0.33 32.869 -0.115 33.713 0.052 34.555 C 0.22 35.395 0.952 36 1.803 36 L 1.807 36 C 11.637 35.982 17.283 32.01 21.287 22.3 C 22.565 19.25 23.214 15.986 23.214 12.6 C 23.214 7.393 21.652 4.558 19.27 0.826 C 18.942 0.311 18.375 0 17.768 0 Z" fill="rgb(54,160,232)"></path><path transform="translate(26.785,0)" d="M 17.768 0 L 5.357 0 C 2.403 0 0 2.422 0 5.4 L 0 18 C 0 20.978 2.403 23.4 5.357 23.4 L 8.902 23.4 C 7.244 28.241 5.828 30.559 1.116 32.539 C 0.33 32.869 -0.115 33.713 0.052 34.555 C 0.22 35.395 0.952 36 1.803 36 L 1.807 36 C 11.637 35.982 17.283 32.01 21.287 22.3 C 22.565 19.25 23.214 15.986 23.214 12.6 C 23.214 7.393 21.652 4.558 19.27 0.826 C 18.942 0.311 18.375 0 17.768 0 Z" fill="rgb(54,160,232)"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:400;font-style:italic;font-size:15px;line-height:150%;color:rgb(28,28,28);">Thousands of voices, one clear signal — when AI does the heavy lifting, design gets to do the listening.</span>
+  </div>
+
+  <div data-screen-label="Case End (mobile)" style="display:flex;flex-direction:column;gap:18px;">
+    <span style="font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(28px,8vw,40px);line-height:106%;color:rgb(28,37,65);">Keep Exploring</span>
+    <span style="font-family:'Lato',sans-serif;font-weight:400;font-size:16px;line-height:170%;color:rgba(28,37,65,0.85);text-wrap:pretty;">Head back to all work, or get in touch if you would like to talk through the process behind this project.</span>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <a href="index.html#work" style="min-height:52px;display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:50px;padding:0 26px;background:rgb(28,37,65);color:#ffffff;font-family:'Lato',sans-serif;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 12px 28px rgba(28,37,65,0.2);">Back to all work<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+      <a href="index.html#contact" style="min-height:52px;display:inline-flex;align-items:center;justify-content:center;border-radius:50px;padding:0 26px;background:rgba(255,255,255,0.7);border:1.5px solid rgba(28,37,65,0.45);color:rgb(28,37,65);font-family:'Lato',sans-serif;font-weight:700;font-size:17px;text-decoration:none;">Contact me</a>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div style="position:fixed;left:0;right:0;bottom:0;z-index:9500;display:flex;align-items:stretch;justify-content:space-around;padding:6px 8px calc(6px + env(safe-area-inset-bottom));background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid rgba(28,37,65,0.10);">
+  <a href="index.html" style="flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:rgb(82,90,112);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.3px;">Home</span>
+  </a>
+  <a href="index.html#work" style="flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:rgb(54,160,232);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.3px;">Work</span>
+  </a>
+  <a href="index.html#resume" style="flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:rgb(82,90,112);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.3px;">Resume</span>
+  </a>
+  <a href="index.html#contact" style="flex:1;min-height:52px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:rgb(82,90,112);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+    <span style="font-family:'Lato',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.3px;">Contact</span>
+  </a>
+</div>
+</div>
+</div>
+<script src="js/app.js"></script>
+<script src="js/employee-feedback.js"></script>
+</body>
+</html>
